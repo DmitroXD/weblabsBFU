@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <form action="#" method="POST">  <!-- values for method GET|POST|DELETE|PATCH|OPTION-->
+        <label for="hobby"></label>  <!-- Собственно label, то бишь некоторая метка для поля ввода-->
+        <input list="hobbyList" name="hobby" id="hobby"><br> <!-- Собственно поле ввода, в нашем случае это выпадающий список -->
+        <datalist id="hobbyList">
+            <!-- Лучше конечно настроить value через айди, т к на бэке скорее всего будет запрос или к бд
+            или обращение к enum, но тогда придется возьмиться с css-->
+            <option value="Кино"></option>
+            <option value="Музыка"></option>
+            <option value="Спорт"></option>
+            <option value="Игры"></option>
+            <option value="Хоббихорсинг">(осуждаю)</option>
+        </datalist>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
